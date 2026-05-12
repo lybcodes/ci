@@ -79,7 +79,6 @@ pipeline {
                     """
                     sh '''#! /usr/bin/env bash
                         set -o pipefail
-
                         make bazel_coverage_test_ddlargsv1 2>&1 | tee bazel-test.log
                     '''
                 }
