@@ -38,7 +38,6 @@ global_definitions:
     build_jobs="20"
     test_workers="16"
     if [[ "${sanitizer}" == "TSan" ]]; then
-      build_jobs="20"
       test_workers="10"
     fi
 
